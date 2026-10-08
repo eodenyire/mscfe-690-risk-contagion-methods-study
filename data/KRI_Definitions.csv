@@ -1,1 +1,201 @@
-
+KRI_ID,PRT_ID,KRI_Name,Sub_Risk_Type,Directionality,Measurement_Unit,Frequency,Green_Threshold,Amber_Threshold,Red_Threshold,Likelihood_Score,Impact_Score,Residual_Risk,KRI_Owner,Data_Source
+KRI_001,Business_Continuity_Risk,Business_Continuity_Risk_KRI_1,Business_Continuity_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,4,13,Business_Continuity_Risk_Team,Core Banking System
+KRI_002,Business_Continuity_Risk,Business_Continuity_Risk_KRI_2,Business_Continuity_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,7,Business_Continuity_Risk_Team,Core Banking System
+KRI_003,Business_Continuity_Risk,Business_Continuity_Risk_KRI_3,Business_Continuity_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,2,5,Business_Continuity_Risk_Team,Core Banking System
+KRI_004,Business_Continuity_Risk,Business_Continuity_Risk_KRI_4,Business_Continuity_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,13,Business_Continuity_Risk_Team,Core Banking System
+KRI_005,Business_Continuity_Risk,Business_Continuity_Risk_KRI_5,Business_Continuity_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,6,Business_Continuity_Risk_Team,Core Banking System
+KRI_006,Business_Continuity_Risk,Business_Continuity_Risk_KRI_6,Business_Continuity_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,5,Business_Continuity_Risk_Team,Core Banking System
+KRI_007,Business_Continuity_Risk,Business_Continuity_Risk_KRI_7,Business_Continuity_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,4,Business_Continuity_Risk_Team,Core Banking System
+KRI_008,Business_Continuity_Risk,Business_Continuity_Risk_KRI_8,Business_Continuity_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,8,Business_Continuity_Risk_Team,Core Banking System
+KRI_009,Business_Continuity_Risk,Business_Continuity_Risk_KRI_9,Business_Continuity_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,4,14,Business_Continuity_Risk_Team,Core Banking System
+KRI_010,Business_Continuity_Risk,Business_Continuity_Risk_KRI_10,Business_Continuity_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,1,14,Business_Continuity_Risk_Team,Core Banking System
+KRI_011,Capital_Risk,Capital_Risk_KRI_1,Capital_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,2,14,Capital_Risk_Team,Core Banking System
+KRI_012,Capital_Risk,Capital_Risk_KRI_2,Capital_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,1,13,Capital_Risk_Team,Core Banking System
+KRI_013,Capital_Risk,Capital_Risk_KRI_3,Capital_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,12,Capital_Risk_Team,Core Banking System
+KRI_014,Capital_Risk,Capital_Risk_KRI_4,Capital_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,14,Capital_Risk_Team,Core Banking System
+KRI_015,Capital_Risk,Capital_Risk_KRI_5,Capital_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,5,Capital_Risk_Team,Core Banking System
+KRI_016,Capital_Risk,Capital_Risk_KRI_6,Capital_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,6,Capital_Risk_Team,Core Banking System
+KRI_017,Capital_Risk,Capital_Risk_KRI_7,Capital_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,5,Capital_Risk_Team,Core Banking System
+KRI_018,Capital_Risk,Capital_Risk_KRI_8,Capital_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,3,9,Capital_Risk_Team,Core Banking System
+KRI_019,Capital_Risk,Capital_Risk_KRI_9,Capital_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,1,9,Capital_Risk_Team,Core Banking System
+KRI_020,Capital_Risk,Capital_Risk_KRI_10,Capital_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,4,11,Capital_Risk_Team,Core Banking System
+KRI_021,Compliance_Risk,Compliance_Risk_KRI_1,Compliance_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,4,Compliance_Risk_Team,Core Banking System
+KRI_022,Compliance_Risk,Compliance_Risk_KRI_2,Compliance_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,12,Compliance_Risk_Team,Core Banking System
+KRI_023,Compliance_Risk,Compliance_Risk_KRI_3,Compliance_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,2,6,Compliance_Risk_Team,Core Banking System
+KRI_024,Compliance_Risk,Compliance_Risk_KRI_4,Compliance_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,14,Compliance_Risk_Team,Core Banking System
+KRI_025,Compliance_Risk,Compliance_Risk_KRI_5,Compliance_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,4,10,Compliance_Risk_Team,Core Banking System
+KRI_026,Compliance_Risk,Compliance_Risk_KRI_6,Compliance_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,3,Compliance_Risk_Team,Core Banking System
+KRI_027,Compliance_Risk,Compliance_Risk_KRI_7,Compliance_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,10,Compliance_Risk_Team,Core Banking System
+KRI_028,Compliance_Risk,Compliance_Risk_KRI_8,Compliance_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,8,Compliance_Risk_Team,Core Banking System
+KRI_029,Compliance_Risk,Compliance_Risk_KRI_9,Compliance_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,2,6,Compliance_Risk_Team,Core Banking System
+KRI_030,Compliance_Risk,Compliance_Risk_KRI_10,Compliance_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,4,Compliance_Risk_Team,Core Banking System
+KRI_031,Concentration_Risk,Concentration_Risk_KRI_1,Concentration_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,4,4,Concentration_Risk_Team,Core Banking System
+KRI_032,Concentration_Risk,Concentration_Risk_KRI_2,Concentration_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,2,6,Concentration_Risk_Team,Core Banking System
+KRI_033,Concentration_Risk,Concentration_Risk_KRI_3,Concentration_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,3,10,Concentration_Risk_Team,Core Banking System
+KRI_034,Concentration_Risk,Concentration_Risk_KRI_4,Concentration_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,3,14,Concentration_Risk_Team,Core Banking System
+KRI_035,Concentration_Risk,Concentration_Risk_KRI_5,Concentration_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,2,10,Concentration_Risk_Team,Core Banking System
+KRI_036,Concentration_Risk,Concentration_Risk_KRI_6,Concentration_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,4,Concentration_Risk_Team,Core Banking System
+KRI_037,Concentration_Risk,Concentration_Risk_KRI_7,Concentration_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,1,10,Concentration_Risk_Team,Core Banking System
+KRI_038,Concentration_Risk,Concentration_Risk_KRI_8,Concentration_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,14,Concentration_Risk_Team,Core Banking System
+KRI_039,Concentration_Risk,Concentration_Risk_KRI_9,Concentration_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,11,Concentration_Risk_Team,Core Banking System
+KRI_040,Concentration_Risk,Concentration_Risk_KRI_10,Concentration_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,3,3,Concentration_Risk_Team,Core Banking System
+KRI_041,Conduct_Risk,Conduct_Risk_KRI_1,Conduct_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,3,11,Conduct_Risk_Team,Core Banking System
+KRI_042,Conduct_Risk,Conduct_Risk_KRI_2,Conduct_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,14,Conduct_Risk_Team,Core Banking System
+KRI_043,Conduct_Risk,Conduct_Risk_KRI_3,Conduct_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,13,Conduct_Risk_Team,Core Banking System
+KRI_044,Conduct_Risk,Conduct_Risk_KRI_4,Conduct_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,1,10,Conduct_Risk_Team,Core Banking System
+KRI_045,Conduct_Risk,Conduct_Risk_KRI_5,Conduct_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,3,Conduct_Risk_Team,Core Banking System
+KRI_046,Conduct_Risk,Conduct_Risk_KRI_6,Conduct_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,1,12,Conduct_Risk_Team,Core Banking System
+KRI_047,Conduct_Risk,Conduct_Risk_KRI_7,Conduct_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,2,11,Conduct_Risk_Team,Core Banking System
+KRI_048,Conduct_Risk,Conduct_Risk_KRI_8,Conduct_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,11,Conduct_Risk_Team,Core Banking System
+KRI_049,Conduct_Risk,Conduct_Risk_KRI_9,Conduct_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,4,Conduct_Risk_Team,Core Banking System
+KRI_050,Conduct_Risk,Conduct_Risk_KRI_10,Conduct_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,9,Conduct_Risk_Team,Core Banking System
+KRI_051,Credit_Risk,NPL Ratio,Credit_Risk_Sub_1,Higher_Worse,%,Monthly,5.0,10.0,15.0,3,2,10,Credit_Risk_Team,Core Banking System
+KRI_052,Credit_Risk,Provision Coverage,Credit_Risk_Sub_2,Higher_Better,%,Monthly,80.0,70.0,60.0,1,3,14,Credit_Risk_Team,Core Banking System
+KRI_053,Credit_Risk,Sector Concentration,Credit_Risk_Sub_3,Higher_Worse,%,Monthly,20.0,25.0,30.0,4,2,13,Credit_Risk_Team,Core Banking System
+KRI_054,Credit_Risk,Credit Score Distribution,Credit_Risk_Sub_1,Higher_Better,Score,Monthly,650.0,600.0,550.0,3,1,5,Credit_Risk_Team,Core Banking System
+KRI_055,Credit_Risk,LTV Ratio,Credit_Risk_Sub_2,Higher_Worse,%,Monthly,70.0,80.0,90.0,1,3,5,Credit_Risk_Team,Core Banking System
+KRI_056,Credit_Risk,Watchlist Ratio,Credit_Risk_Sub_3,Higher_Worse,%,Monthly,3.0,5.0,8.0,1,1,12,Credit_Risk_Team,Core Banking System
+KRI_057,Credit_Risk,Restructured Loans,Credit_Risk_Sub_1,Higher_Worse,%,Monthly,2.0,4.0,6.0,3,3,9,Credit_Risk_Team,Core Banking System
+KRI_058,Credit_Risk,Credit Growth,Credit_Risk_Sub_2,Higher_Worse,%,Monthly,15.0,20.0,25.0,3,1,12,Credit_Risk_Team,Core Banking System
+KRI_059,Credit_Risk,Collateral Coverage,Credit_Risk_Sub_3,Higher_Better,%,Monthly,120.0,100.0,80.0,2,4,5,Credit_Risk_Team,Core Banking System
+KRI_060,Credit_Risk,Recovery Rate,Credit_Risk_Sub_1,Higher_Better,%,Monthly,60.0,50.0,40.0,3,4,9,Credit_Risk_Team,Core Banking System
+KRI_061,Currency_Risk,Currency_Risk_KRI_1,Currency_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,6,Currency_Risk_Team,Core Banking System
+KRI_062,Currency_Risk,Currency_Risk_KRI_2,Currency_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,9,Currency_Risk_Team,Core Banking System
+KRI_063,Currency_Risk,Currency_Risk_KRI_3,Currency_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,1,13,Currency_Risk_Team,Core Banking System
+KRI_064,Currency_Risk,Currency_Risk_KRI_4,Currency_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,9,Currency_Risk_Team,Core Banking System
+KRI_065,Currency_Risk,Currency_Risk_KRI_5,Currency_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,8,Currency_Risk_Team,Core Banking System
+KRI_066,Currency_Risk,Currency_Risk_KRI_6,Currency_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,12,Currency_Risk_Team,Core Banking System
+KRI_067,Currency_Risk,Currency_Risk_KRI_7,Currency_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,2,11,Currency_Risk_Team,Core Banking System
+KRI_068,Currency_Risk,Currency_Risk_KRI_8,Currency_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,2,14,Currency_Risk_Team,Core Banking System
+KRI_069,Currency_Risk,Currency_Risk_KRI_9,Currency_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,14,Currency_Risk_Team,Core Banking System
+KRI_070,Currency_Risk,Currency_Risk_KRI_10,Currency_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,13,Currency_Risk_Team,Core Banking System
+KRI_071,Cyber_Risk,Cyber VaR,Cyber_Risk_Sub_1,Higher_Worse,Million,Monthly,5.0,10.0,25.0,4,2,9,Cyber_Risk_Team,Core Banking System
+KRI_072,Cyber_Risk,Unpatched Vulnerabilities,Cyber_Risk_Sub_2,Higher_Worse,Count,Monthly,5.0,15.0,30.0,4,1,9,Cyber_Risk_Team,Core Banking System
+KRI_073,Cyber_Risk,MTTD,Cyber_Risk_Sub_3,Higher_Worse,Hours,Monthly,4.0,12.0,24.0,2,1,3,Cyber_Risk_Team,Core Banking System
+KRI_074,Cyber_Risk,MTTC,Cyber_Risk_Sub_1,Higher_Worse,Hours,Monthly,8.0,24.0,48.0,1,3,11,Cyber_Risk_Team,Core Banking System
+KRI_075,Cyber_Risk,Phishing Success Rate,Cyber_Risk_Sub_2,Higher_Worse,%,Monthly,2.0,5.0,10.0,4,1,11,Cyber_Risk_Team,Core Banking System
+KRI_076,Cyber_Risk,PAM Violations,Cyber_Risk_Sub_3,Higher_Worse,Count,Monthly,0.0,2.0,5.0,3,3,8,Cyber_Risk_Team,Core Banking System
+KRI_077,Cyber_Risk,Ransomware Detection,Cyber_Risk_Sub_1,Higher_Worse,Count,Monthly,0.0,1.0,3.0,4,3,11,Cyber_Risk_Team,Core Banking System
+KRI_078,Cyber_Risk,Data Breaches,Cyber_Risk_Sub_2,Higher_Worse,Count,Monthly,0.0,1.0,2.0,2,1,3,Cyber_Risk_Team,Core Banking System
+KRI_079,Cyber_Risk,Insurance Coverage,Cyber_Risk_Sub_3,Higher_Better,%,Monthly,80.0,70.0,60.0,3,2,14,Cyber_Risk_Team,Core Banking System
+KRI_080,Cyber_Risk,Training Completion,Cyber_Risk_Sub_1,Higher_Better,%,Monthly,95.0,90.0,80.0,4,3,13,Cyber_Risk_Team,Core Banking System
+KRI_081,External_Fraud_Risk,External_Fraud_Risk_KRI_1,External_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,4,10,External_Fraud_Risk_Team,Core Banking System
+KRI_082,External_Fraud_Risk,External_Fraud_Risk_KRI_2,External_Fraud_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,3,External_Fraud_Risk_Team,Core Banking System
+KRI_083,External_Fraud_Risk,External_Fraud_Risk_KRI_3,External_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,12,External_Fraud_Risk_Team,Core Banking System
+KRI_084,External_Fraud_Risk,External_Fraud_Risk_KRI_4,External_Fraud_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,9,External_Fraud_Risk_Team,Core Banking System
+KRI_085,External_Fraud_Risk,External_Fraud_Risk_KRI_5,External_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,3,3,External_Fraud_Risk_Team,Core Banking System
+KRI_086,External_Fraud_Risk,External_Fraud_Risk_KRI_6,External_Fraud_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,1,10,External_Fraud_Risk_Team,Core Banking System
+KRI_087,External_Fraud_Risk,External_Fraud_Risk_KRI_7,External_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,3,3,External_Fraud_Risk_Team,Core Banking System
+KRI_088,External_Fraud_Risk,External_Fraud_Risk_KRI_8,External_Fraud_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,2,14,External_Fraud_Risk_Team,Core Banking System
+KRI_089,External_Fraud_Risk,External_Fraud_Risk_KRI_9,External_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,3,7,External_Fraud_Risk_Team,Core Banking System
+KRI_090,External_Fraud_Risk,External_Fraud_Risk_KRI_10,External_Fraud_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,3,External_Fraud_Risk_Team,Core Banking System
+KRI_091,Financial_Crime_Risk,Financial_Crime_Risk_KRI_1,Financial_Crime_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,2,4,Financial_Crime_Risk_Team,Core Banking System
+KRI_092,Financial_Crime_Risk,Financial_Crime_Risk_KRI_2,Financial_Crime_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,12,Financial_Crime_Risk_Team,Core Banking System
+KRI_093,Financial_Crime_Risk,Financial_Crime_Risk_KRI_3,Financial_Crime_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,9,Financial_Crime_Risk_Team,Core Banking System
+KRI_094,Financial_Crime_Risk,Financial_Crime_Risk_KRI_4,Financial_Crime_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,13,Financial_Crime_Risk_Team,Core Banking System
+KRI_095,Financial_Crime_Risk,Financial_Crime_Risk_KRI_5,Financial_Crime_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,3,Financial_Crime_Risk_Team,Core Banking System
+KRI_096,Financial_Crime_Risk,Financial_Crime_Risk_KRI_6,Financial_Crime_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,2,10,Financial_Crime_Risk_Team,Core Banking System
+KRI_097,Financial_Crime_Risk,Financial_Crime_Risk_KRI_7,Financial_Crime_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,4,Financial_Crime_Risk_Team,Core Banking System
+KRI_098,Financial_Crime_Risk,Financial_Crime_Risk_KRI_8,Financial_Crime_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,2,13,Financial_Crime_Risk_Team,Core Banking System
+KRI_099,Financial_Crime_Risk,Financial_Crime_Risk_KRI_9,Financial_Crime_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,4,3,Financial_Crime_Risk_Team,Core Banking System
+KRI_100,Financial_Crime_Risk,Financial_Crime_Risk_KRI_10,Financial_Crime_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,13,Financial_Crime_Risk_Team,Core Banking System
+KRI_101,Interest_Rate_Risk,Interest_Rate_Risk_KRI_1,Interest_Rate_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,4,5,Interest_Rate_Risk_Team,Core Banking System
+KRI_102,Interest_Rate_Risk,Interest_Rate_Risk_KRI_2,Interest_Rate_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,13,Interest_Rate_Risk_Team,Core Banking System
+KRI_103,Interest_Rate_Risk,Interest_Rate_Risk_KRI_3,Interest_Rate_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,12,Interest_Rate_Risk_Team,Core Banking System
+KRI_104,Interest_Rate_Risk,Interest_Rate_Risk_KRI_4,Interest_Rate_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,5,Interest_Rate_Risk_Team,Core Banking System
+KRI_105,Interest_Rate_Risk,Interest_Rate_Risk_KRI_5,Interest_Rate_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,9,Interest_Rate_Risk_Team,Core Banking System
+KRI_106,Interest_Rate_Risk,Interest_Rate_Risk_KRI_6,Interest_Rate_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,3,Interest_Rate_Risk_Team,Core Banking System
+KRI_107,Interest_Rate_Risk,Interest_Rate_Risk_KRI_7,Interest_Rate_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,9,Interest_Rate_Risk_Team,Core Banking System
+KRI_108,Interest_Rate_Risk,Interest_Rate_Risk_KRI_8,Interest_Rate_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,4,3,Interest_Rate_Risk_Team,Core Banking System
+KRI_109,Interest_Rate_Risk,Interest_Rate_Risk_KRI_9,Interest_Rate_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,4,11,Interest_Rate_Risk_Team,Core Banking System
+KRI_110,Interest_Rate_Risk,Interest_Rate_Risk_KRI_10,Interest_Rate_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,2,9,Interest_Rate_Risk_Team,Core Banking System
+KRI_111,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_1,Internal_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,2,12,Internal_Fraud_Risk_Team,Core Banking System
+KRI_112,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_2,Internal_Fraud_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,14,Internal_Fraud_Risk_Team,Core Banking System
+KRI_113,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_3,Internal_Fraud_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,11,Internal_Fraud_Risk_Team,Core Banking System
+KRI_114,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_4,Internal_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,3,Internal_Fraud_Risk_Team,Core Banking System
+KRI_115,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_5,Internal_Fraud_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,14,Internal_Fraud_Risk_Team,Core Banking System
+KRI_116,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_6,Internal_Fraud_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,1,13,Internal_Fraud_Risk_Team,Core Banking System
+KRI_117,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_7,Internal_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,1,11,Internal_Fraud_Risk_Team,Core Banking System
+KRI_118,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_8,Internal_Fraud_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,5,Internal_Fraud_Risk_Team,Core Banking System
+KRI_119,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_9,Internal_Fraud_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,8,Internal_Fraud_Risk_Team,Core Banking System
+KRI_120,Internal_Fraud_Risk,Internal_Fraud_Risk_KRI_10,Internal_Fraud_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,10,Internal_Fraud_Risk_Team,Core Banking System
+KRI_121,Liquidity_Risk,Liquidity Coverage Ratio,Liquidity_Risk_Sub_1,Higher_Better,%,Monthly,120.0,110.0,100.0,4,3,3,Liquidity_Risk_Team,Core Banking System
+KRI_122,Liquidity_Risk,Net Stable Funding,Liquidity_Risk_Sub_2,Higher_Better,%,Monthly,110.0,105.0,100.0,4,4,8,Liquidity_Risk_Team,Core Banking System
+KRI_123,Liquidity_Risk,Liquid Asset Buffer,Liquidity_Risk_Sub_1,Higher_Better,%,Monthly,30.0,20.0,10.0,4,4,5,Liquidity_Risk_Team,Core Banking System
+KRI_124,Liquidity_Risk,Deposit Concentration,Liquidity_Risk_Sub_2,Higher_Worse,%,Monthly,20.0,30.0,40.0,4,2,11,Liquidity_Risk_Team,Core Banking System
+KRI_125,Liquidity_Risk,Wholesale Funding,Liquidity_Risk_Sub_1,Higher_Worse,%,Monthly,15.0,25.0,35.0,3,1,4,Liquidity_Risk_Team,Core Banking System
+KRI_126,Liquidity_Risk,Cross Currency Funding,Liquidity_Risk_Sub_2,Higher_Worse,%,Monthly,20.0,30.0,40.0,4,2,4,Liquidity_Risk_Team,Core Banking System
+KRI_127,Liquidity_Risk,Cash Outflow (30-Day),Liquidity_Risk_Sub_1,Higher_Worse,Million,Monthly,100.0,250.0,500.0,2,2,5,Liquidity_Risk_Team,Core Banking System
+KRI_128,Liquidity_Risk,Buffer Utilization,Liquidity_Risk_Sub_2,Higher_Worse,%,Monthly,50.0,70.0,85.0,4,1,11,Liquidity_Risk_Team,Core Banking System
+KRI_129,Liquidity_Risk,Loan-to-Deposit,Liquidity_Risk_Sub_1,Higher_Worse,%,Monthly,80.0,90.0,100.0,4,1,6,Liquidity_Risk_Team,Core Banking System
+KRI_130,Liquidity_Risk,Risk Limit Utilization,Liquidity_Risk_Sub_2,Higher_Worse,%,Monthly,60.0,80.0,95.0,1,2,7,Liquidity_Risk_Team,Core Banking System
+KRI_131,Market_Risk,"VaR (99%, 1-Day)",Market_Risk_Sub_1,Higher_Worse,Million,Monthly,5.0,10.0,15.0,4,4,10,Market_Risk_Team,Core Banking System
+KRI_132,Market_Risk,Interest Rate Sensitivity,Market_Risk_Sub_2,Higher_Worse,Thousand,Monthly,50.0,100.0,150.0,4,4,9,Market_Risk_Team,Core Banking System
+KRI_133,Market_Risk,Equity Exposure,Market_Risk_Sub_3,Higher_Worse,%,Monthly,10.0,15.0,20.0,3,1,3,Market_Risk_Team,Core Banking System
+KRI_134,Market_Risk,FX Position Limit,Market_Risk_Sub_1,Higher_Worse,%,Monthly,70.0,85.0,95.0,4,4,13,Market_Risk_Team,Core Banking System
+KRI_135,Market_Risk,Derivative Exposure,Market_Risk_Sub_2,Higher_Worse,Million,Monthly,500.0,750.0,1000.0,3,2,9,Market_Risk_Team,Core Banking System
+KRI_136,Market_Risk,Portfolio Duration,Market_Risk_Sub_3,Higher_Worse,Years,Monthly,3.0,5.0,7.0,2,2,8,Market_Risk_Team,Core Banking System
+KRI_137,Market_Risk,Capital Utilization,Market_Risk_Sub_1,Higher_Worse,%,Monthly,70.0,85.0,95.0,2,1,5,Market_Risk_Team,Core Banking System
+KRI_138,Market_Risk,Trading Loss Breaches,Market_Risk_Sub_2,Higher_Worse,Count,Monthly,0.0,2.0,5.0,2,4,13,Market_Risk_Team,Core Banking System
+KRI_139,Market_Risk,Stress Test Loss,Market_Risk_Sub_3,Higher_Worse,Million,Monthly,10.0,25.0,50.0,3,2,7,Market_Risk_Team,Core Banking System
+KRI_140,Market_Risk,Risk Limit Utilization,Market_Risk_Sub_1,Higher_Worse,%,Monthly,70.0,85.0,95.0,2,1,14,Market_Risk_Team,Core Banking System
+KRI_141,Model_Risk,Model_Risk_KRI_1,Model_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,4,3,Model_Risk_Team,Core Banking System
+KRI_142,Model_Risk,Model_Risk_KRI_2,Model_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,5,Model_Risk_Team,Core Banking System
+KRI_143,Model_Risk,Model_Risk_KRI_3,Model_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,3,Model_Risk_Team,Core Banking System
+KRI_144,Model_Risk,Model_Risk_KRI_4,Model_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,14,Model_Risk_Team,Core Banking System
+KRI_145,Model_Risk,Model_Risk_KRI_5,Model_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,7,Model_Risk_Team,Core Banking System
+KRI_146,Model_Risk,Model_Risk_KRI_6,Model_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,3,14,Model_Risk_Team,Core Banking System
+KRI_147,Model_Risk,Model_Risk_KRI_7,Model_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,1,10,Model_Risk_Team,Core Banking System
+KRI_148,Model_Risk,Model_Risk_KRI_8,Model_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,1,7,Model_Risk_Team,Core Banking System
+KRI_149,Model_Risk,Model_Risk_KRI_9,Model_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,14,Model_Risk_Team,Core Banking System
+KRI_150,Model_Risk,Model_Risk_KRI_10,Model_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,7,Model_Risk_Team,Core Banking System
+KRI_151,Operational_Risk,Loss Events,Operational_Risk_Sub_1,Higher_Worse,Count,Monthly,5.0,10.0,20.0,4,3,3,Operational_Risk_Team,Core Banking System
+KRI_152,Operational_Risk,Loss Amount,Operational_Risk_Sub_2,Higher_Worse,Thousand,Monthly,50.0,100.0,250.0,4,3,4,Operational_Risk_Team,Core Banking System
+KRI_153,Operational_Risk,Control Failure Rate,Operational_Risk_Sub_3,Higher_Worse,%,Monthly,2.0,5.0,10.0,1,2,8,Operational_Risk_Team,Core Banking System
+KRI_154,Operational_Risk,Audit Findings,Operational_Risk_Sub_1,Higher_Worse,Count,Monthly,0.0,2.0,5.0,2,3,10,Operational_Risk_Team,Core Banking System
+KRI_155,Operational_Risk,Process Error Rate,Operational_Risk_Sub_2,Higher_Worse,%,Monthly,1.0,3.0,5.0,2,4,4,Operational_Risk_Team,Core Banking System
+KRI_156,Operational_Risk,Vendor Incidents,Operational_Risk_Sub_3,Higher_Worse,Count,Monthly,0.0,2.0,5.0,4,3,8,Operational_Risk_Team,Core Banking System
+KRI_157,Operational_Risk,Regulatory Breaches,Operational_Risk_Sub_1,Higher_Worse,Count,Monthly,0.0,1.0,3.0,3,2,13,Operational_Risk_Team,Core Banking System
+KRI_158,Operational_Risk,Capital Utilization,Operational_Risk_Sub_2,Higher_Worse,%,Monthly,60.0,80.0,95.0,2,2,12,Operational_Risk_Team,Core Banking System
+KRI_159,Operational_Risk,Key Person Dependency,Operational_Risk_Sub_3,Higher_Worse,Score,Monthly,30.0,50.0,70.0,1,4,3,Operational_Risk_Team,Core Banking System
+KRI_160,Operational_Risk,RCSA Completion,Operational_Risk_Sub_1,Higher_Better,%,Monthly,95.0,90.0,80.0,1,3,8,Operational_Risk_Team,Core Banking System
+KRI_161,Reputational_Risk,Reputational_Risk_KRI_1,Reputational_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,3,12,Reputational_Risk_Team,Core Banking System
+KRI_162,Reputational_Risk,Reputational_Risk_KRI_2,Reputational_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,2,5,Reputational_Risk_Team,Core Banking System
+KRI_163,Reputational_Risk,Reputational_Risk_KRI_3,Reputational_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,10,Reputational_Risk_Team,Core Banking System
+KRI_164,Reputational_Risk,Reputational_Risk_KRI_4,Reputational_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,12,Reputational_Risk_Team,Core Banking System
+KRI_165,Reputational_Risk,Reputational_Risk_KRI_5,Reputational_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,1,6,Reputational_Risk_Team,Core Banking System
+KRI_166,Reputational_Risk,Reputational_Risk_KRI_6,Reputational_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,3,Reputational_Risk_Team,Core Banking System
+KRI_167,Reputational_Risk,Reputational_Risk_KRI_7,Reputational_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,14,Reputational_Risk_Team,Core Banking System
+KRI_168,Reputational_Risk,Reputational_Risk_KRI_8,Reputational_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,3,14,Reputational_Risk_Team,Core Banking System
+KRI_169,Reputational_Risk,Reputational_Risk_KRI_9,Reputational_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,2,9,Reputational_Risk_Team,Core Banking System
+KRI_170,Reputational_Risk,Reputational_Risk_KRI_10,Reputational_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,2,5,Reputational_Risk_Team,Core Banking System
+KRI_171,Sovereign_Risk,Sovereign_Risk_KRI_1,Sovereign_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,2,8,Sovereign_Risk_Team,Core Banking System
+KRI_172,Sovereign_Risk,Sovereign_Risk_KRI_2,Sovereign_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,2,8,Sovereign_Risk_Team,Core Banking System
+KRI_173,Sovereign_Risk,Sovereign_Risk_KRI_3,Sovereign_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,12,Sovereign_Risk_Team,Core Banking System
+KRI_174,Sovereign_Risk,Sovereign_Risk_KRI_4,Sovereign_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,3,8,Sovereign_Risk_Team,Core Banking System
+KRI_175,Sovereign_Risk,Sovereign_Risk_KRI_5,Sovereign_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,4,7,Sovereign_Risk_Team,Core Banking System
+KRI_176,Sovereign_Risk,Sovereign_Risk_KRI_6,Sovereign_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,7,Sovereign_Risk_Team,Core Banking System
+KRI_177,Sovereign_Risk,Sovereign_Risk_KRI_7,Sovereign_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,4,14,Sovereign_Risk_Team,Core Banking System
+KRI_178,Sovereign_Risk,Sovereign_Risk_KRI_8,Sovereign_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,3,6,Sovereign_Risk_Team,Core Banking System
+KRI_179,Sovereign_Risk,Sovereign_Risk_KRI_9,Sovereign_Risk_Sub_3,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,6,Sovereign_Risk_Team,Core Banking System
+KRI_180,Sovereign_Risk,Sovereign_Risk_KRI_10,Sovereign_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,3,5,Sovereign_Risk_Team,Core Banking System
+KRI_181,Strategic_Risk,Strategic_Risk_KRI_1,Strategic_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,4,6,Strategic_Risk_Team,Core Banking System
+KRI_182,Strategic_Risk,Strategic_Risk_KRI_2,Strategic_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,1,4,Strategic_Risk_Team,Core Banking System
+KRI_183,Strategic_Risk,Strategic_Risk_KRI_3,Strategic_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,5,Strategic_Risk_Team,Core Banking System
+KRI_184,Strategic_Risk,Strategic_Risk_KRI_4,Strategic_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,4,5,Strategic_Risk_Team,Core Banking System
+KRI_185,Strategic_Risk,Strategic_Risk_KRI_5,Strategic_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,4,2,9,Strategic_Risk_Team,Core Banking System
+KRI_186,Strategic_Risk,Strategic_Risk_KRI_6,Strategic_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,12,Strategic_Risk_Team,Core Banking System
+KRI_187,Strategic_Risk,Strategic_Risk_KRI_7,Strategic_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,2,9,Strategic_Risk_Team,Core Banking System
+KRI_188,Strategic_Risk,Strategic_Risk_KRI_8,Strategic_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,3,1,14,Strategic_Risk_Team,Core Banking System
+KRI_189,Strategic_Risk,Strategic_Risk_KRI_9,Strategic_Risk_Sub_1,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,1,1,12,Strategic_Risk_Team,Core Banking System
+KRI_190,Strategic_Risk,Strategic_Risk_KRI_10,Strategic_Risk_Sub_2,Higher_Worse,Ratio,Monthly,5.0,10.0,15.0,2,1,4,Strategic_Risk_Team,Core Banking System
+KRI_191,Technology_Risk,System Availability,Technology_Risk_Sub_1,Higher_Better,%,Monthly,99.9,99.5,99.0,4,2,8,Technology_Risk_Team,Core Banking System
+KRI_192,Technology_Risk,Mean Time to Repair,Technology_Risk_Sub_2,Higher_Worse,Hours,Monthly,2.0,4.0,8.0,4,1,10,Technology_Risk_Team,Core Banking System
+KRI_193,Technology_Risk,Patch Compliance,Technology_Risk_Sub_3,Higher_Better,%,Monthly,95.0,90.0,85.0,1,1,3,Technology_Risk_Team,Core Banking System
+KRI_194,Technology_Risk,IT Incidents,Technology_Risk_Sub_1,Higher_Worse,Count,Monthly,10.0,20.0,30.0,4,1,9,Technology_Risk_Team,Core Banking System
+KRI_195,Technology_Risk,Change Success Rate,Technology_Risk_Sub_2,Higher_Better,%,Monthly,98.0,95.0,90.0,4,3,7,Technology_Risk_Team,Core Banking System
+KRI_196,Technology_Risk,Capacity Utilization,Technology_Risk_Sub_3,Higher_Worse,%,Monthly,70.0,80.0,90.0,2,1,9,Technology_Risk_Team,Core Banking System
+KRI_197,Technology_Risk,Backup Success Rate,Technology_Risk_Sub_1,Higher_Better,%,Monthly,99.0,97.0,95.0,3,4,12,Technology_Risk_Team,Core Banking System
+KRI_198,Technology_Risk,RTO Breaches,Technology_Risk_Sub_2,Higher_Worse,Count,Monthly,0.0,1.0,3.0,4,3,7,Technology_Risk_Team,Core Banking System
+KRI_199,Technology_Risk,Critical Downtime,Technology_Risk_Sub_3,Higher_Worse,Hours,Monthly,1.0,4.0,8.0,2,1,14,Technology_Risk_Team,Core Banking System
+KRI_200,Technology_Risk,Certifications,Technology_Risk_Sub_1,Higher_Better,%,Monthly,80.0,70.0,60.0,1,3,3,Technology_Risk_Team,Core Banking System
