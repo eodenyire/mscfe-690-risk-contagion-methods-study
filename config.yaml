@@ -1,0 +1,129 @@
+# ============================================================================
+# CAPSTONE METHODS STUDY: RISK NETWORK RECOVERY BENCHMARKING
+# Configuration for Synthetic Data Generation and Method Benchmarking
+# ============================================================================
+
+# RISK TAXONOMY
+# 20 Principal Risk Types (PRTs) partitioned into Financial and Non-Financial
+prt_definitions:
+  financial:
+    - Credit_Risk
+    - Market_Risk
+    - Liquidity_Risk
+    - Capital_Risk
+    - Interest_Rate_Risk
+    - Currency_Risk
+    - Concentration_Risk
+  non_financial:
+    - Operational_Risk
+    - Compliance_Risk
+    - Conduct_Risk
+    - Financial_Crime_Risk
+    - External_Fraud_Risk
+    - Internal_Fraud_Risk
+    - Model_Risk
+    - Technology_Risk
+    - Cyber_Risk
+    - Strategic_Risk
+    - Reputational_Risk
+    - Sovereign_Risk
+    - Business_Continuity_Risk
+
+# DATA GENERATION
+synthetic_data:
+  num_prts: 20
+  kris_per_prt: 5
+  total_kris: 100
+  time_steps: 250
+  frequency: "monthly"
+  
+  # VAR(1) persistence (autocorrelation)
+  persistence:
+    mean: 0.75
+    std: 0.08
+  
+  # t-copula tail dependence
+  t_copula_df: 5  # degrees of freedom (lower = fatter tails)
+  
+  # Measurement noise
+  noise_levels: [0.1, 0.3, 0.5]
+  
+  # Network density scenarios
+  network_densities: [2, 4]  # edges per PRT node
+
+# PLANTED NETWORK (Ground Truth)
+planted_network:
+  num_nodes: 20  # PRTs
+  sparse_edges_per_node: 2
+  dense_edges_per_node: 4
+  edge_weights_distribution: "uniform"  # weights in (0.3, 0.9)
+  seed: 42
+
+# EXPERIMENTAL FACTORS
+experimental_design:
+  data_volume: [50, 100, 150, 200, 250]
+  noise_level: [0.1, 0.3, 0.5]
+  tail_dependence_df: [3, 5, 10]
+  network_density: [2, 4]
+  monte_carlo_replications: 100
+
+# RECOVERY METHODS
+recovery_methods:
+  var_diebold_yilmaz:
+    enabled: true
+    lag_order: 1
+    description: "VAR(1) with Diebold-Yilmaz connectedness"
+  
+  covar:
+    enabled: true
+    quantile: 0.05  # 5th percentile for stress definition
+    description: "Adrian & Brunnermeier CoVaR"
+  
+  debtrank:
+    enabled: true
+    contagion_factor: 0.5
+    description: "Battiston et al. DebtRank propagation"
+  
+  gnn:
+    enabled: true
+    num_layers: 2
+    hidden_dim: 64
+    dropout: 0.2
+    learning_rate: 0.001
+    epochs: 100
+    batch_size: 32
+    description: "Graph Neural Network (GCN)"
+
+# EVALUATION METRICS
+evaluation:
+  metrics:
+    - precision
+    - recall
+    - f1_score
+    - auc_roc
+    - edge_weight_correlation
+    - impulse_response_mse
+  
+  edge_threshold_range: [0.1, 0.9]
+  num_threshold_points: 50
+
+# OUTPUT AND VISUALIZATION
+output:
+  results_dir: "./results"
+  figures_dir: "./results/figures"
+  logs_dir: "./results/logs"
+  checkpoint_dir: "./results/checkpoints"
+  
+  # Minimal visualization
+  visualizations:
+    - adjacency_heatmaps  # planted vs. recovered
+    - degradation_curves   # F1 vs. data volume and noise
+    - roc_curves          # ROC curves by method
+    - weight_correlation_scatter  # estimated vs. true weights
+
+# RANDOM SEEDS (reproducibility)
+seeds:
+  network_generation: 42
+  data_generation: 123
+  train_test_split: 456
+  gnn_training: 789
