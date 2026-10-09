@@ -403,16 +403,6 @@ python experiment_runner.py
 - Emmanuel Odenyire Anyira
 - Francis Kwami Dzikpe
 
-**Supervisor Feedback Incorporated:**
-- Reframed as methods study (Option A) ✅
-- Resolved circularity via planted networks ✅
-- Integrated 20 PRTs and 100 KRIs ✅
-- Applied Student's t-copula for tail dependence ✅
-- Benchmarked VAR+DY and CoVaR baselines ✅
-- SWOT competitor analysis ✅
-- Dropped platform/dashboard, retained minimal visualization ✅
-- Specified concrete dimensions (T=250, σ ∈ {0.1,0.3,0.5}, ν ∈ {3,5,10}) ✅
-
 ---
 
 ## Next Steps (Post-Module 4)
