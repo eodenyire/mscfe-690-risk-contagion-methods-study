@@ -18,8 +18,8 @@ import sys
 import json
 from pathlib import Path
 
-# Add repo to path
-sys.path.insert(0, str(Path(__file__).parent))
+# Add src to path
+sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from experiment_runner import ExperimentRunner, QuickBenchmark
 from visualization import Visualizer

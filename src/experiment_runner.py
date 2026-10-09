@@ -116,10 +116,20 @@ class ExperimentRunner:
         # Run each replication
         for rep_idx, exp in enumerate(tqdm(experiments, desc=config_name)):
             X = exp['kri_panel']
-            W_true = exp['W_true']
+            W_true_prt = exp['W_true']
             
-            # Instantiate evaluator
-            evaluator = RecoveryEvaluator(W_true)
+            # Expand W_true from (20, 20) to (100, 100) for KRI-level evaluation
+            # Each KRI block inherits the PRT-level connection
+            import numpy as np
+            W_true_kri = np.zeros((100, 100))
+            for i in range(20):
+                for j in range(20):
+                    i_start, i_end = i * 5, (i + 1) * 5
+                    j_start, j_end = j * 5, (j + 1) * 5
+                    W_true_kri[i_start:i_end, j_start:j_end] = W_true_prt[i, j]
+            
+            # Instantiate evaluator with KRI-level ground truth
+            evaluator = RecoveryEvaluator(W_true_kri)
             
             # Run each method
             try:
@@ -147,9 +157,9 @@ class ExperimentRunner:
                 debtrank = DebtRank(contagion_factor=0.5)
                 initial_shock = np.zeros(20)
                 initial_shock[0] = 1.0
-                distress_path = debtrank.propagate_shock(W_true, initial_shock, steps=10)
+                distress_path = debtrank.propagate_shock(W_true_prt, initial_shock, steps=10)
                 # For now, store a placeholder result
-                result_debtrank = evaluator.evaluate(W_true)  # Reference
+                result_debtrank = evaluator.evaluate(W_true_kri)  # Reference
                 method_results['debtrank'].append(result_debtrank)
             except Exception as e:
                 self.logger.warning(f"DebtRank failed on rep {rep_idx}: {str(e)}")

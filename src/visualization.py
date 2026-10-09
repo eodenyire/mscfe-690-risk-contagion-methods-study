@@ -255,6 +255,10 @@ class MethodComparison:
         noise_levels = sorted(df['noise_level'].unique())
         fig, axes = plt.subplots(1, len(noise_levels), figsize=(15, 5))
         
+        # Handle case where there's only 1 noise level (axes is not an array)
+        if len(noise_levels) == 1:
+            axes = [axes]
+        
         for idx, noise in enumerate(noise_levels):
             df_subset = df[df['noise_level'] == noise]
             pivot = df_subset.pivot(index='method', columns='time_steps', values=metric)

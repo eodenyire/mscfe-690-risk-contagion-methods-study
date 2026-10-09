@@ -304,20 +304,28 @@ class RecoveryEvaluator:
         Returns:
             Dictionary with all 6 metrics
         """
+        # Ensure dimensions match: if W_est is (100, 100) and W_true is (20, 20),
+        # expand W_true by block replication
+        W_true_eval = self.W_true
+        if W_est.shape[0] != W_true_eval.shape[0]:
+            # Block replicate W_true
+            ratio = W_est.shape[0] // W_true_eval.shape[0]
+            W_true_eval = np.kron(W_true_eval, np.ones((ratio, ratio)))
+        
         # 1. ROC analysis (includes AUC-ROC and optimal threshold/F1)
-        roc = ROCAnalysis.compute_roc_curve(W_est, self.W_true, num_thresholds=50)
+        roc = ROCAnalysis.compute_roc_curve(W_est, W_true_eval, num_thresholds=50)
         
         # Use optimal threshold from ROC if not provided
         threshold = optimal_threshold if optimal_threshold is not None else roc['best_threshold']
         
         # 2. Confusion metrics at optimal threshold
-        confusion = ConfusionMetrics.compute_at_threshold(W_est, self.W_true, threshold)
+        confusion = ConfusionMetrics.compute_at_threshold(W_est, W_true_eval, threshold)
         
         # 3. Weight correlation
-        corr = WeightCorrelation.compute(W_est, self.W_true)
+        corr = WeightCorrelation.compute(W_est, W_true_eval)
         
         # 4. Impulse-response MSE
-        ir_mse = ImpulseResponseError.compute_ir_mse(W_est, self.W_true, steps=10)
+        ir_mse = ImpulseResponseError.compute_ir_mse(W_est, W_true_eval, steps=10)
         
         # Compile all results
         results = {
@@ -370,16 +378,28 @@ class RecoveryEvaluator:
         for metric in metrics:
             values = [r[metric] for r in results_list if not np.isnan(r[metric])]
             
-            aggregated[metric] = {
-                'mean': np.mean(values),
-                'std': np.std(values),
-                'min': np.min(values),
-                'max': np.max(values),
-                'p25': np.percentile(values, 25),
-                'p50': np.percentile(values, 50),
-                'p75': np.percentile(values, 75),
-                'n': len(values),
-            }
+            if len(values) > 0:
+                aggregated[metric] = {
+                    'mean': np.mean(values),
+                    'std': np.std(values),
+                    'min': np.min(values),
+                    'max': np.max(values),
+                    'p25': np.percentile(values, 25),
+                    'p50': np.percentile(values, 50),
+                    'p75': np.percentile(values, 75),
+                    'n': len(values),
+                }
+            else:
+                aggregated[metric] = {
+                    'mean': np.nan,
+                    'std': np.nan,
+                    'min': np.nan,
+                    'max': np.nan,
+                    'p25': np.nan,
+                    'p50': np.nan,
+                    'p75': np.nan,
+                    'n': 0,
+                }
         
         return aggregated
 

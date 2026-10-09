@@ -319,74 +319,81 @@ class DebtRank:
 # METHOD 4: GRAPH NEURAL NETWORK (GNN)
 # ============================================================================
 
-class GNNLayer(nn.Module):
-    """Graph Convolutional layer for network recovery."""
-    
-    def __init__(self, in_dim: int, out_dim: int, dropout: float = 0.2):
-        super().__init__()
-        self.conv = GCNConv(in_dim, out_dim)
-        self.dropout = nn.Dropout(dropout)
-    
-    def forward(self, x, edge_index, edge_weight=None):
-        x = self.conv(x, edge_index, edge_weight)
-        x = torch.relu(x)
-        x = self.dropout(x)
-        return x
+if TORCH_AVAILABLE:
+    class GNNLayer(nn.Module):
+        """Graph Convolutional layer for network recovery."""
+        
+        def __init__(self, in_dim: int, out_dim: int, dropout: float = 0.2):
+            super().__init__()
+            self.conv = GCNConv(in_dim, out_dim)
+            self.dropout = nn.Dropout(dropout)
+        
+        def forward(self, x, edge_index, edge_weight=None):
+            x = self.conv(x, edge_index, edge_weight)
+            x = torch.relu(x)
+            x = self.dropout(x)
+            return x
 
 
-class GNNAdjacencyEstimator(nn.Module):
-    """
-    Graph Neural Network for adjacency matrix recovery.
-    
-    Architecture:
-    - Input: KRI time series (T, n)
-    - 2 GCN layers with message passing
-    - Output: Estimated adjacency matrix (n, n)
-    
-    Training: Minimize reconstruction error + sparsity penalty
-    """
-    
-    def __init__(self, num_kris: int, hidden_dim: int = 64, num_layers: int = 2, dropout: float = 0.2):
-        super().__init__()
-        
-        self.num_kris = num_kris
-        self.hidden_dim = hidden_dim
-        
-        # Encoder: map time series to node embeddings
-        self.encoder = nn.Sequential(
-            nn.Linear(num_kris, hidden_dim),
-            nn.ReLU(),
-            nn.Dropout(dropout),
-            nn.Linear(hidden_dim, hidden_dim),
-        )
-        
-        # Decoder: reconstruct adjacency via dot product
-        self.decoder = nn.Bilinear(hidden_dim, hidden_dim, 1)
-    
-    def forward(self, X: torch.Tensor) -> torch.Tensor:
+    class GNNAdjacencyEstimator(nn.Module):
         """
-        Forward pass: estimate adjacency matrix.
+        Graph Neural Network for adjacency matrix recovery.
         
-        Args:
-            X (T, n): KRI panel data
+        Architecture:
+        - Input: KRI time series (T, n)
+        - 2 GCN layers with message passing
+        - Output: Estimated adjacency matrix (n, n)
+        
+        Training: Minimize reconstruction error + sparsity penalty
+        """
+        
+        def __init__(self, num_kris: int, hidden_dim: int = 64, num_layers: int = 2, dropout: float = 0.2):
+            super().__init__()
             
-        Returns:
-            A_est (n, n): Estimated adjacency matrix
-        """
-        # Get mean embeddings per node (across time)
-        embeddings = self.encoder(X.T)  # (n, hidden_dim)
+            self.num_kris = num_kris
+            self.hidden_dim = hidden_dim
+            
+            # Encoder: map time series to node embeddings
+            self.encoder = nn.Sequential(
+                nn.Linear(num_kris, hidden_dim),
+                nn.ReLU(),
+                nn.Dropout(dropout),
+                nn.Linear(hidden_dim, hidden_dim),
+            )
+            
+            # Decoder: reconstruct adjacency via dot product
+            self.decoder = nn.Bilinear(hidden_dim, hidden_dim, 1)
         
-        # Reconstruct adjacency: A[i,j] = sigmoid(embed_i · W · embed_j)
-        n = embeddings.shape[0]
-        A_est = torch.zeros(n, n, device=X.device)
-        
-        for i in range(n):
-            for j in range(n):
-                if i != j:
-                    logit = self.decoder(embeddings[i:i+1], embeddings[j:j+1])
-                    A_est[i, j] = torch.sigmoid(logit).squeeze()
-        
-        return A_est
+        def forward(self, X: torch.Tensor) -> torch.Tensor:
+            """
+            Forward pass: estimate adjacency matrix.
+            
+            Args:
+                X (T, n): KRI panel data
+                
+            Returns:
+                A_est (n, n): Estimated adjacency matrix
+            """
+            # Get mean embeddings per node (across time)
+            embeddings = self.encoder(X.T)  # (n, hidden_dim)
+            
+            # Reconstruct adjacency: A[i,j] = sigmoid(embed_i · W · embed_j)
+            n = embeddings.shape[0]
+            A_est = torch.zeros(n, n, device=X.device)
+            
+            for i in range(n):
+                for j in range(n):
+                    if i != j:
+                        logit = self.decoder(embeddings[i:i+1], embeddings[j:j+1])
+                        A_est[i, j] = torch.sigmoid(logit).squeeze()
+            
+            return A_est
+else:
+    # Dummy classes when PyTorch is not available
+    class GNNLayer:
+        pass
+    class GNNAdjacencyEstimator:
+        pass
 
 
 class GNNRecovery:
